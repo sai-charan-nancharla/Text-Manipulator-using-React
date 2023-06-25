@@ -70,10 +70,11 @@ function Project1(){
       <div className='container'>
         <Routes>
         
-          <Route path="/about" element={<About mode={mode}/>}/>
+          
             
           
           <Route exact path="/" element={<Textfor heading='Analyze your text' mode={mode} alert={alert} Alertshow={Alertshow}/>} />
+          <Route exact path="/about" element={<About mode={mode}/>}/>
             
         
         </Routes>
