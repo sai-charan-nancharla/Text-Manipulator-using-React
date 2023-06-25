@@ -64,22 +64,22 @@ function Project1(){
           <Textfor heading='Analyze your text' mode={mode} alert={alert} Alertshow={Alertshow}/>
       </div> */}
       {/* <About/> */}
-      // <Router>
+      <Router>
       <Navbar title="TeXt MaNiPuLaToR" about="About us!" mode={mode} toggleMode={toggleMode}/>
       <Alert  alert={alert}/>
       <div className='container'>
-        // <Routes>
+        <Routes>
         
           
             
           
-          // <Route exact path="/" element={<Textfor heading='Analyze your text' mode={mode} alert={alert} Alertshow={Alertshow}/>} />
-          // <Route exact path="/about" element={<About mode={mode}/>}/>
+          <Route exact path="/" element={<Textfor heading='Analyze your text' mode={mode} alert={alert} Alertshow={Alertshow}/>} />
+          <Route exact path="/about" element={<About mode={mode}/>}/>
           <Textfor heading='Analyze your text' mode={mode} alert={alert} Alertshow={Alertshow}/>
         
-        // </Routes>
+        </Routes>
         </div>
-      // </Router>
+      </Router>
         </>
     );
 }
